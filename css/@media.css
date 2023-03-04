@@ -1,0 +1,39 @@
+
+
+@media screen and (min-width: 480px) {
+    .contailer {
+        max-width: 428px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .contailer {
+        max-width: 582px;
+    }
+
+    .customers-item {
+    flex-basis: calc((100% - 48px) / 3);    
+    height: 88px;  
+    width: 168px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .contailer {
+        max-width: 1158px;
+    }
+
+    .customers-list {
+        gap: 24px;
+    }
+
+    .customers-item {
+    flex-basis: calc((100% - 120px) / 6);    
+    }
+}
