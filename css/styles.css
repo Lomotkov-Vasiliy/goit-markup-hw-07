@@ -65,7 +65,9 @@ body {
 
 .display-flax {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
 }
 
 /* ----------------<header></header>---------------- */
@@ -197,11 +199,12 @@ body {
 
 .title {
     color: var(--white-color);
-    font-size: 56px;
-    line-height: 1.1;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
     letter-spacing: 0.02em;
 
-    width: 496px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
 
@@ -237,8 +240,8 @@ body {
 
 /* -------------------section benefits-------------------- */
 .pre-benefits {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .icon-svg {
@@ -258,7 +261,16 @@ body {
     justify-content: center;
 }
 
+.list-advantages {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    row-gap: 72px;
+}
 
+    /* .benefits-list {
+        width: calc((100% - 24px) / 2);
+    } */
 
 .benefits {
     font-weight: 500;   
@@ -271,7 +283,8 @@ body {
     color: var(--second-text-color);
     font-size: 16px;
     line-height: 1.5;
-    width: 264px;
+    /* width: calc((100% - 24px) / 2); */
+    
 }
 
 
@@ -306,8 +319,8 @@ body {
 
 .team {
     background-color: var(--background-other-color-2);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .developers-name {
@@ -421,12 +434,14 @@ body {
 /* ---------------------------footer------------------------- */
 .footer {
     background-color: var(--background-other-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .logo-footer {
     line-height: 1.17;
+    display: block;
+    text-align: center;
 }
 
 .logo-footer-color {
@@ -437,12 +452,16 @@ body {
     color: var(--background-other-color-2);
     font-size: 16px;
     line-height: 1.5;
-    width: 264px;
-    margin-top: 16px;    
+    width: 268px;
+    margin-top: 16px;       
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px; 
 }
 
 .footer-flex {
-    display: flex;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 
 .footer-soc-media {
@@ -450,14 +469,19 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    margin-left: 120px;
+    /* margin-left: 120px; */
+    text-align: center;
 }
 
 .footer-soc-network {
     display: flex;
     gap: 16px;
     margin-top: 16px;
-    margin-left: 120px;
+    margin-right: auto;
+    margin-bottom: 72px;
+    margin-left: auto;
+    width: 208px;
+    /* margin-left: 120px; */
 }
 
 
@@ -483,8 +507,8 @@ body {
 
 
 .form-subscrib {
-    display: flex;
-    margin-left: 80px;
+    /* display: flex; */
+    /* margin-left: 80px; */
 }
 
 .mail-subscrib {
@@ -492,9 +516,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: block;
     margin-bottom: 16px;
     color: #ffffff;
+    text-align: center;
 }
 
 .subscription {
@@ -513,6 +537,9 @@ body {
     outline: transparent;
     
     padding: 8px 16px;
+    margin-bottom: 16px;
+    
+    width: 100%;
 }
 .subscription::placeholder {
     font-weight: 400;
@@ -530,6 +557,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04;
+    text-align: left;
     
     background-color: var(--accent-color);
     border: none;
@@ -538,13 +566,14 @@ body {
     margin-left: 24px;
     color: var(--white-color);
     cursor: pointer;
-    position: absolute;
+    /* position: absolute; */
 
     background-image: url(../images/paper-plane.svg);
     background-repeat: no-repeat;
     background-position: left 117px top 10px; 
-    display: inline-flex;
+    display: block  ;
     padding: 8px 24px;
+    margin: 0 auto;
 }
 
 
