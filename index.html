@@ -18,30 +18,39 @@
     </head>
     
     <body>
-        <!-- <header class="header">
-           <div class="container header-container">
+        <header class="header">
+           <div class="header-flex first-container">
                 <a class="link text-logo-accent logo-header" href="./index.html" lang="en">Web<span
                         class="logo-header-color">Studio</span>
                 </a>
+                <button type="button" class="open-menu js-open-menu">
+                    <svg width="32" height="22">
+                        <use href="./images/bg-fon/cvg.icon.svg#open-menu"></use>
+                    </svg>
+                </button>
                
-                <nav>          
-                    <ul class="site-nav list ">
-                        <li class="list-nav"><a class="link list-nov-head accent" href="./index.html">Studio</a></li>
-                        <li class="list-nav"><a class="link list-nov-head" href="./portfolio.html">Portfolio</a></li>
-                        <li class="list-nav"><a class="link list-nov-head" href="">Contacts</a></li>
+                <!-- class="hidden-head" -->
+                <div class="hidden-head">
+                    <nav>
+                        <ul class="site-nav list ">
+                            <li class="list-nav"><a class="link accent" href="./index.html">Studio</a></li>
+                            <li class="list-nav"><a class="link" href="./portfolio.html">Portfolio</a></li>
+                            <li class="list-nav"><a class="link" href="">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <ul class="auth-nav list">
+                        <li class="header-link-contacts"><a class="link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="header-link-contacts"><a class="link" href="tel:+380961111111">+11 (000) 111-11-11</a></li>
                     </ul>
-                </nav>
-                
-                <ul class="auth-nav list">
-                    <li class="header-link-contacts"><a class="link list-nov-head" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="header-link-contacts"><a class="link list-nov-head" href="tel:+380961111111">+11 (000) 111-11-11</a></li>
-                </ul>
+                </div>                
            </div>
-        </header> -->
+        </header>
         <main>
             <!-- Секция замовлення послуги -->
             <section class="hero">
-                <div class="container">
+                <div class="first-container">
                     <h1 class="title">Effective Solutions for Your Business</h1>
                     <button type="button" class="button btn" data-modal-open>Order Service</button>
                 </div>
@@ -50,7 +59,7 @@
             <!-- Секція переліку наших  переваг -->
             
             <section class="pre-benefits">
-                <div class="container">
+                <div class="first-container">
                     <h2 class="visually-hidden">Our advantages</h2>
 
                     <ul class="icon-svg">
@@ -90,13 +99,19 @@
                     <h2 class="employment">What are we doing</h2>
                     <ul class="list display-flax">
                         <li>
-                            <img src="./images/studio-page/computer.jpg" alt="computer" width="360" height="300">
+                            <img 
+                            srcset="./images/studio-page/computer.jpg 1x, ./images/studio-page/computer-2x.jpg 2x"
+                            src="./images/studio-page/computer.jpg" alt="computer" width="360" height="300">
                         </li>
                         <li>
-                            <img src="./images/studio-page/chat-phone.jpg" alt="chat-phone" width="360" height="300">
+                            <img 
+                            srcset="./images/studio-page/chat-phone.jpg 1x, ./images/studio-page/chat-phone-2x.jpg 2x"
+                            src="./images/studio-page/chat-phone.jpg" alt="chat-phone" width="360" height="300">
                         </li>
                         <li>
-                            <img src="./images/studio-page/phone-hand.jpg" alt="phone-hand" width="360" height="300">
+                            <img 
+                            srcset="./images/studio-page/phone-hand.jpg 1x, ./images/studio-page/phone-hand-2x.jpg 2x"
+                            src="./images/studio-page/phone-hand.jpg" alt="phone-hand" width="360" height="300">
                         </li>
                     </ul>
                 </div>
@@ -109,7 +124,8 @@
                     <h2 class="our-team">Our team</h2>
                     <ul class="list display-flax">
                         <li class="bgr-img">
-                            <img src="./images/studio-page/Developer-Mark-Guerrero.jpg" alt="Developer-Mark-Guerrero" width="264"
+                            <img srcset="./images/studio-page/Developer-Mark-Guerrero.jpg 1x, ./images/studio-page/Developer-Mark-Guerrero-2x.jpg 2x" 
+                                src="./images/studio-page/Developer-Mark-Guerrero.jpg" alt="Developer-Mark-Guerrero" width="264"
                                 height="260">
                             <div class="wrapp">
                                 <h3 class="developers-name">Mark Guerrero</h3>
@@ -131,7 +147,8 @@
                             </div>
                         </li>
                         <li class="bgr-img">
-                            <img src="./images/studio-page/Developer-Tom-Ford.jpg" alt="Developer-Tom-Ford" width="264" height="260">
+                            <img srcset="./images/studio-page/Developer-Tom-Ford.jpg 1x, ./images/studio-page/Developer-Tom-Ford-2x.jpg 2x" 
+                            src="./images/studio-page/Developer-Tom-Ford.jpg" alt="Developer-Tom-Ford" width="264" height="260">
                             <div class="wrapp">
                                 <h3 class="developers-name">Tom Ford</h3>
                                 <p lang="en" class="profession">Frontend Developer</p>
@@ -156,7 +173,8 @@
                             </div>
                         </li>
                         <li class="bgr-img">
-                            <img src="./images/studio-page/Developer-Camila-Garcia.jpg" alt="Developer-Camila-Garcia" width="264"
+                            <img srcset="./images/studio-page/Developer-Camila-Garcia.jpg 1x, ./images/studio-page/Developer-Camila-Garcia-2x.jpg 2x"
+                            src="./images/studio-page/Developer-Camila-Garcia.jpg" alt="Developer-Camila-Garcia" width="264"
                                 height="260">
                             <div class="wrapp">
                                 <h3 class="developers-name">Camila Garcia</h3>
@@ -182,7 +200,8 @@
                             </div>
                         </li>
                         <li class="bgr-img">
-                            <img src="./images/studio-page/Developer-Daniel-Wilson.jpg" alt="Developer-Daniel-Wilson" width="264"
+                            <img srcset="./images/studio-page/Developer-Daniel-Wilson.jpg 1x, ./images/studio-page/Developer-Daniel-Wilson-2x.jpg 2x"
+                                src="./images/studio-page/Developer-Daniel-Wilson.jpg" alt="Developer-Daniel-Wilson" width="264"
                                 height="260">
                             <div class="wrapp">
                                 <h3 class="developers-name">Daniel Wilson</h3>
@@ -342,8 +361,53 @@
                     <button type="submit" class="button-modal">Send</button>
                 </form>
             </div>
-        </div>  
+        </div> 
+        
+        <div class="js-menu-container menu-container">
+            <div class="container">
+                <div>
+                    <button type="button" class="js-close-menu" data-modal-close>
+                        <svg width="8" height="8" class="svg-close">
+                            <use href="./images/bg-fon/close.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                
+                    <ul class=" list ">
+                        <li class="list-nov-menu"><a class="link " href="./index.html">Studio</a></li>
+                        <li class="list-nov-menu"><a class="link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="list-nov-menu"><a class="link accent" href="">Contacts</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <ul class="list list-menu">
+                        <li class="menu-cont-mail"><a class="link accent" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="menu-cont-tel"><a class="link " href="tel:+380961111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                    <ul class="employees-soc-network-menu">
+                        <li class="soc-list"><a href="" class="employees-to-link link"><svg class="employees-icon" width="16"
+                                    height="16">
+                                    <use href="./images/bg-fon/symbol-defs.svg#icon-instagram"></use>
+                                </svg></a></li>
+                        <li class="soc-list"><a href="" class="employees-to-link link"><svg class="employees-icon" width="16"
+                                    height="16">
+                                    <use href="./images/bg-fon/symbol-defs.svg#icon-twitter"></use>
+                                </svg></a></li>
+                        <li class="soc-list"><a href="" class="employees-to-link link"><svg class="employees-icon" width="16"
+                                    height="16">
+                                    <use href="./images/bg-fon/symbol-defs.svg#icon-facebook"></use>
+                                </svg></a></li>
+                        <li class="soc-list"><a href="" class="employees-to-link link"><svg class="employees-icon" width="16"
+                                    height="16">
+                                    <use href="./images/bg-fon/symbol-defs.svg#icon-linkedin"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
 
         <script src="./js/modal.js"></script>
+        <script src="/js/mobile-menu.js"></script>
     </body>
 </html>
