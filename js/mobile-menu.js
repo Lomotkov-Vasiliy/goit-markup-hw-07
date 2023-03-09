@@ -1,6 +1,6 @@
 
 
-(function () {
+(() => {
   const menuContainer = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
@@ -15,6 +15,6 @@
     .matchMedia('(min-width: 600px)')
     .addEventListener(
       'change',
-      e => e.matches && menuContainer.classList.remove('is-open')
+      e => e.matches && menuContainer.classList.remove('is-open'),
     );
 })();
